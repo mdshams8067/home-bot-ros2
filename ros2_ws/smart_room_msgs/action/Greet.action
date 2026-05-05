@@ -1,0 +1,10 @@
+string message
+string language
+float32 volume
+---
+bool success
+string message_spoken
+float32 duration_seconds
+---
+float32 progress
+string current_words
