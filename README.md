@@ -1,5 +1,3 @@
-# Smart Room Monitor — ROS 2 from Scratch
-
 A ROS 2 (Jazzy) project built to deeply understand robotics middleware 
 by implementing a simulated smart room system from the ground up with
 custom messages, URDF, TF tree, sensor nodes, and a full launch pipeline.
