@@ -27,7 +27,7 @@ services:
 
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      - ./ros2_ws:/ros2_ws/src
+      - ./ros2_ws/src:/ros2_ws/src
       - gazebo_models:/root/.gazebo
 
     network_mode: host
