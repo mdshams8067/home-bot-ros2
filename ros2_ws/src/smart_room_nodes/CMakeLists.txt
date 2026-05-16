@@ -26,6 +26,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/temp_sensor
   scripts/humidity_sensor
+  scripts/fan_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
