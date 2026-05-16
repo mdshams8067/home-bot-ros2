@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from smart_room_nodes.sensor_nodes.humidity_sensor_node import main
+main()
