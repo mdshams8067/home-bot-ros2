@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(smart_room_msgs REQUIRED)
+find_package(rclcpp_action REQUIRED)
 
 # ── Python support ────────────────────────────────────────────
 # This extension teaches ament_cmake how to handle Python
@@ -43,6 +44,21 @@ ament_target_dependencies(fan_controller_node
 
 install(TARGETS
   fan_controller_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+add_executable(greeting_controller_node src/greeting_controller_node.cpp)
+
+ament_target_dependencies(greeting_controller_node
+  rclcpp
+  rclcpp_action
+  std_msgs
+  smart_room_msgs
+)
+
+install(TARGETS
+  fan_controller_node
+  greeting_controller_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
