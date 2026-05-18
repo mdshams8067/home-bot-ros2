@@ -27,6 +27,7 @@ install(PROGRAMS
   scripts/temp_sensor
   scripts/humidity_sensor
   scripts/fan_node
+  scripts/speaker_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
