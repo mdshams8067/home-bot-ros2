@@ -1,0 +1,28 @@
+# Smart Room Parameters
+# Edit this file to configure the system without touching any code
+
+temp_sensor_node:
+  ros__parameters:
+    publish_frequency: 1.0
+    room_id: living_room
+    base_temperature: 25.0
+
+humidity_sensor_node:
+  ros__parameters:
+    publish_frequency: 1.0
+    room_id: living_room
+    base_humidity: 60.0
+
+fan_controller_node:
+  ros__parameters:
+    temp_threshold: 28.0
+    fan_speed_high: 0.8
+    fan_speed_low: 0.0
+    room_id: living_room
+
+greeting_controller_node:
+  ros__parameters:
+    greeting_message: Hello welcome home
+    language: en
+    volume: 0.8
+    greeting_cooldown_sec: 10.0
